@@ -45,7 +45,7 @@ function Actions({ list }: { list: AdguardList }) {
         icon={Icon.Clipboard}
         onAction={async () => {
           await Clipboard.copy(list.rawUrl);
-          showToast({ style: Toast.Style.Success, title: "Copied raw URL" });
+          await showToast({ style: Toast.Style.Success, title: "Copied raw URL" });
         }}
       />
     </ActionPanelAny>
